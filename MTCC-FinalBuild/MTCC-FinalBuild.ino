@@ -2,7 +2,6 @@
    Emile Hamwey and Adam Frank
    https://github.com/adamf59
    af.frank.2001@gmail.com
-
    
 */
 
@@ -101,7 +100,7 @@ void setup() {
   Serial.println(F("setup is complete."));
 
   TRACK_TIMER.restart();
-    tone(35, NOTE_C4, 430);
+    tone(35, NOTE_C6, 430);
 
 
   pinMode(45, INPUT);
@@ -178,10 +177,10 @@ void loop() {
 
   //delay(250);
   if (CURRENT_SCREEN == 0) {
-    setPixelColor(countPixel + 1, 0, 0, 0);
-    setPixelColor(countPixel, 255, 255, 255);
-    setPixelColor(countPixel - 1, 0, 0, 0);
-    delay(1);
+    setPixelColorNoShow(countPixel + 1, 0, 0, 0);
+    setPixelColorNoShow(countPixel, 255, 255, 255);
+    setPixelColorNoShow(countPixel - 1, 0, 0, 0);
+    strip.show();
     if (countPixel == 72) {
       countPixel = 0;
     }
@@ -197,6 +196,9 @@ void reset() {
   TRACK_3_FINISHED = false;
   TRACK_4_FINISHED = false;
   screenSizer = 45;
+
+    
+    tone(35, NOTE_D2, 1000);
 
 }
 
@@ -416,4 +418,9 @@ void setPixelColor(int index, int g, int r, int b) {
 
   strip.show();
 }
+void setPixelColorNoShow(int index, int g, int r, int b) {
 
+  strip.setPixelColor(index, g, r, b);
+
+ 
+}
