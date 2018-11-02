@@ -1,6 +1,7 @@
 # Mouse-Trap-Car-Clocking-Apparatus
 Mouse Trap Car Timing System:
 afrank20@windhamsd.org, ehamwey19@windhamsd.org
+## Build 1.0, Released 10/30/18
 
 ## USAGE:
 1.	Ensure power is supplied to the Arduino via USB cable (the “START!” screen should be shown)
