@@ -1,7 +1,7 @@
 # Mouse Trap Car Clocking Apparatus
 Mouse Trap Car Timing System:
 afrank20@windhamsd.org, ehamwey19@windhamsd.org
-## Build 1.0, Released 10/30/18
+## Build 1.1, Released 11/1/19
 
 ## USAGE:
 1.	Ensure power is supplied to the Arduino via USB cable (the “START!” screen should be shown)
@@ -34,6 +34,8 @@ afrank20@windhamsd.org, ehamwey19@windhamsd.org
 
 
 ## REQUIRED LIBRARIES IF EDITING:
+The Adafruit TFT LCD uses a customized version of the TFTLCD Library. If editing, follow the following tutorial:
+http://educ8s.tv/arduino-touch-screen-tutorial/
 
 - Adafruit GFX Library (https://github.com/adafruit/Adafruit-GFX-Library)
 - Adafruit TFTLCD Library (https://github.com/adafruit/TFTLCD-Library)
